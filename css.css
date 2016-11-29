@@ -1,0 +1,297 @@
+﻿#mainPage{
+    width:1000px;
+    height:800px;
+    margin-left:auto;
+    margin-right:auto;
+    background:url(./pukeImage/tableBG2.png);
+    position:relative;
+    /* margin-top:80px; */
+}
+#loadingD{
+    
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    position:relative;
+    z-index:99;
+}
+#shadowD{
+    width:100%;
+    height:100%;
+    position:relative;
+    z-index:10;
+}
+#loading{
+    width:600px;
+    height:40px;
+    position:absolute;
+    left:200px;
+    top:300px;
+    border:4px solid rgb(40,60,35);
+}
+#loading div{
+    width:1px;
+    height:100%;
+    background: rgba(81,119,70,1);
+}
+#loadingD h1{
+    position:absolute;
+    left:200px;
+    top:185px;
+    font-size:50px;
+    color:rgb(40,60,35);
+    font-family:Nirmala UI Semilight;
+    cursor:Default;
+}
+#loadingD h2{
+    position:absolute;
+    left:630px;
+    top:450px;
+    font-size:40px;
+    color:rgb(40,60,35);
+    border:1px solid rgb(40,60,35);
+    cursor:pointer;
+}
+#myTable{
+    width:800px;
+    height:200px;
+    position:absolute;
+    bottom:80px;
+    left:50px;
+}
+#yourTable{
+                
+    
+    width:800px;
+    height:200px;
+    position:absolute;
+    top:80px;
+    right:50px;
+}
+.cardD{
+    float:left;
+    width:120px;
+    height:200px;
+    margin-left:50px;
+    border:none;
+}
+#myTable .cardD{
+    float:left;
+}
+#yourTable .cardD{
+    float:right;
+}
+.cardD img{
+    width:120px;
+    height:200px;
+    border:none;
+}
+#myCard1,#yourCard5{
+    margin:0px;
+}
+#animaCard{
+    width:120px;
+    height:200px;
+    position:absolute;
+    left:445px;
+    top:290px;
+
+    transform:rotate(90deg); 
+    /* transition:transform,1s; */
+    /* animation:animaCardA 2s; */
+}
+/* @keyframes animaCardA{  */
+     /* 0% {left:445px;top:290px;transform:rotate(90deg); }  */
+     /* 100% {left:50px;top:520px;transform:rotate(0deg);transform:rotateY(90deg);} */
+/* }  */
+#discard_pile_bottom{
+    width:220px;
+    height:140px;
+    position:absolute;
+    left:370px;
+    top:305px;
+    cursor:pointer;
+}
+#discard_pile{
+    width:220px;
+    height:140px;
+    position:absolute;
+    left:390px;
+    top:325px;
+    cursor:pointer;
+    z-index:20;
+
+}
+#opponentD{
+    width:600px;
+    height:400px;
+    position:absolute;
+    left:200px;
+    top:200px;
+    background:rgba(81,119,70,0.9);
+    border:4px solid rgba(81,55,30,0.9);
+    z-index:21;
+}
+#opponentD div{
+    position:relative;;
+}
+#opponentD div :not(span){
+    margin:50px;
+    color:#fff;
+    text-indent:26px;
+    line-height:150%;
+    text-align:center; 
+}
+#opponentD div span{ 
+    margin-top:10px; 
+    color:#fff;
+}
+#opponentD div :nth-child(2){
+    margin-left:105px;margin-top:10px; 
+}
+#opponentD div :nth-child(3){
+    margin-left:115px;margin-top:10px; 
+}
+#opponentD div :nth-child(4){
+    margin-left:115px;margin-top:10px; 
+}
+#opponentD div img{ 
+    width:120px;
+    height:120px;
+    border:2px solid rgb(54,83,44);
+    cursor:pointer;
+    position:absolute;
+    transition:transform,0.5s;
+}
+#opponentD div img:hover{
+    transform:scale(1.2,1.2);
+}
+#opp1{
+    left:20px;
+    top:90px;
+}
+#opp2{
+    left:190px;
+    top:90px;
+}
+#opp3{
+    left:360px;
+    top:90px;
+}
+#info{
+    display:block;
+    position:absolute;
+    top:280px;
+    left:35px;
+}
+#opp3D{
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:19;
+    top:0px;left:0px;
+}
+#ruleD{
+    width:600px;
+    height:600px;
+    position:absolute;
+    left:200px;
+    top:100px;
+    background:rgba(81,119,70,0.9);
+    border:4px solid rgba(81,55,30,0.9);
+    z-index:21;
+}
+#ruleD div{
+    margin:50px;
+    color:#fff;
+    text-indent:26px;
+    line-height:150%;
+}
+#ruleD div p:last-child{
+    text-align:right;
+    color:rgb(192,192,192);
+}
+#howToPlayD{
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:19;
+    top:0px;left:0px;
+}
+#opponentB{
+    height:80px;
+    width:80px;
+    border-radius:60px;
+    border:none;
+    background:rgba(255,255,255,0);
+    position:absolute;
+    top:-6px;right:153px;
+    cursor:pointer;
+    z-index:20;
+}
+#endB{
+    height:80px;
+    width:80px;
+    border-radius:60px;
+    border:none;
+    background:rgba(255,255,255,0);
+    position:absolute;
+    right:84px;bottom:309px;
+    cursor:pointer;
+    z-index:20;
+}
+#ruleB{
+    height:80px;
+    width:80px;
+    border-radius:60px;
+    border:none;
+    background:rgba(255,255,255,0);
+    position:absolute;
+    left:254px;bottom:-20px;
+    cursor:pointer;
+    z-index:20;
+}
+#wayToPlayB{
+    height:80px;
+    width:80px;
+    border-radius:60px;
+    border:none;
+    background:rgba(255,255,255,0);
+    position:absolute;
+    left:38px;top:245px;
+    cursor:pointer;
+    z-index:20;
+}
+#endW{
+    height:80px;
+    width:80px;
+    border-radius:60px;
+    border:none;
+    background:rgba(255,255,255,0);
+    position:absolute;
+    left:494px;top:726px;
+    cursor:pointer;
+    z-index:20;
+}
+#resultD{
+    width:800px;
+    height:200px;
+    position:absolute;
+    left:100px;
+    top:300px;
+    background:rgba(81,119,70,0.9);
+    border:4px solid rgba(81,55,30,0.9);
+    cursor:Pointer;
+    z-index:21;
+}
+#resultD h1{
+    font-size:60px;
+    font-family:Nirmala UI Semilight;
+    font-weight:bold;
+    margin-top:50px;
+    text-align:center;
+    cursor:Pointer;
+}
+.clearD{
+    clear:both;
+}
